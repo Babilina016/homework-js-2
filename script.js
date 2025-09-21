@@ -1,5 +1,4 @@
-//1.even or odd
-
+// 1. even or odd
 let number = 10;
 
 if (number % 2 === 0) {
@@ -8,9 +7,9 @@ if (number % 2 === 0) {
   console.log("odd");
 }
 
-//2.grading system
-
-let score = 90;
+// 2. grading system
+let score = 51;
+let grade;
 
 if (score >= 90) {
   grade = "A";
@@ -23,69 +22,62 @@ if (score >= 90) {
 } else {
   grade = "F";
 }
+console.log("grade:", grade);
 
-console.log("შენი შეფასება არის: " + grade);
-
-// 2.2 ასაკის და dress code–ის შემოწმება
+// 2.2 age and dresscode
 let age = 18;
 let dressCode = "yes";
 
 if (age >= 18 && dressCode.toLowerCase() === "yes") {
-  console.log("შეგიძლია გამოცდაზე გასვლა ");
+  console.log("can enter a club");
 } else {
-  console.log("გამოცდაზე გასვლა შეუძლებელია ");
+  console.log("cannot enter a club");
 }
 
-//
-
+// 3. alert and confirm
 let name = "Babilina";
 
 alert("გამარჯობა, " + name + "!");
 
-let continueAction = confirm("გსურს გაგრძელება?");
+let continueAction = confirm("do you want to continue?");
 
 if (continueAction) {
-  console.log(Name + " გადაწყვიტა გაგრძელება ");
+  console.log(name + " confirmed ");
 } else {
-  console.log(Name + " არ სურს გაგრძელება ");
+  console.log(name + " declined ");
 }
 
-//4
-
+// 4. numbers equal or greater
 let num1 = 5;
 let num2 = 10;
 
 if (num1 === num2) {
-  console.log("ორივე რიცხვი თანაბარია");
+  console.log("equal");
 } else if (num1 > num2) {
-  console.log("პირველი რიცხვი დიდი არის მეორე რიცხვზე");
+  console.log("num1 is greater");
 } else {
-  console.log("მეორე რიცხვი დიდი არის პირველზე");
-}
-//5
-
-let username = Babilina;
-let password = Babilina666;
-
-if (username === Babilina && password === Babilina666) {
-  console.log("ლოგინი წარმატებულია ");
-} else {
-  console.log("მომხმარებლის სახელი ან პაროლი არასწორია ");
+  console.log("num2 is greater");
 }
 
-// 6
+// 5. username and password
+let username = "Babilina";
+let password = "Babilina666";
 
-// ტემპერატურის შეყვანა
-let temperature = 10;
-let message;
+if (username === "Babilina" && password === "Babilina666") {
+  console.log("log in ");
+} else {
+  console.log("fail");
+}
+
+// 6. Temperature Warning
+let temperature = 30;
 
 if (temperature < 0) {
-  message = "Freezing ";
+  console.log("Freezing ");
 } else if (temperature <= 20) {
-  message = "Cold ";
+  console.log("Cold ");
 } else if (temperature <= 30) {
-  message = "Warm ";
+  console.log("Warm ");
 } else {
-  message = "Hot ";
+  console.log("Hot ");
 }
-console.log("ტემპერატურა არის:", message);
